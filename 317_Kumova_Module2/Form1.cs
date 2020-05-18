@@ -60,24 +60,6 @@ namespace _317_Kumova_Module2
 
         private void buttonget_result_btn_Click(object sender, EventArgs e)
         {
-            /*Graphics graph = e.ChartGraphics.Graphics;
-
-            PointF point1 = PointF.Empty;
-            PointF point2 = PointF.Empty;
-
-            point1 = e.ChartGraphics.GetAbsolutePoint(point1);
-            point2 = e.ChartGraphics.GetAbsolutePoint(point2);
-
-            var pen = new Pen(Color.Yellow, 3);
-            pen.DashStyle = DashStyle.Dash;
-            .DrawLine(pen, point1, point2);*/
-
-            /*float[] dashValues = { 5, 2, 15, 4 };
-            Pen pen = new Pen(Color.Yellow, 5);
-            pen.DashStyle = DashStyle.Dash;
-            buttonget_result_btn.CreateGraphics(DrawLine(pen, new Point(5, 5), new Point(405, 5)));
-            describtion_label.Graphics.DrawLine(pen, new Point(5, 5), new Point(405, 5));*/
-
             DataGridViewComboBoxCell comboCell = (DataGridViewComboBoxCell)menuGridView[1, 0];
 
             if (comboCell.Value.Equals("закуска"))
@@ -123,13 +105,6 @@ namespace _317_Kumova_Module2
                 lunch.Image = Resources.lan_des;
             }
         }
-        private void describtion_label_Paint(object sender, PaintEventArgs e)
-        {
-/*            var pen = new Pen(Color.Yellow, 3);
-            pen.DashStyle = DashStyle.Dash;
-            e.Graphics.DrawLine(pen, new Point(0, 0), new Point(5, 5));*/
-        }
-
         private void MenuForm_Paint(object sender, PaintEventArgs e)
         {
             Graphics l = e.Graphics;
